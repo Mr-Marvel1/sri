@@ -3,17 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>For Sri ❤️</title>
-
+<title>For Aditya ❤️</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap');
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
 body{
     height:100vh;
     background: linear-gradient(135deg, #ff758c, #ff7eb3);
@@ -24,7 +21,6 @@ body{
     overflow:hidden;
     color:white;
 }
-
 .container{
     text-align:center;
     background: rgba(255,255,255,0.18);
@@ -35,36 +31,30 @@ body{
     max-width:420px;
     animation: fadeIn 1.6s ease;
 }
-
 h1{
     font-family: 'Great Vibes', cursive;
     font-size:3.2rem;
     margin-bottom:10px;
 }
-
 p{
     font-size:1rem;
     margin-bottom:25px;
     line-height:1.7;
 }
-
 .heart{
     font-size:3.8rem;
     animation: heartbeat 1.4s infinite;
 }
-
 h2{
     margin-top:10px;
     font-weight:400;
 }
-
 .buttons{
     display:flex;
     justify-content:center;
     gap:22px;
     margin-top:25px;
 }
-
 button{
     border:none;
     padding:14px 28px;
@@ -73,33 +63,27 @@ button{
     cursor:pointer;
     transition:0.3s ease;
 }
-
 .yes{
     background:#ff4d6d;
     color:white;
 }
-
 .yes:hover{
     transform:scale(1.12);
 }
-
 .no{
     background:white;
     color:#ff4d6d;
     position:relative;
 }
-
 @keyframes heartbeat{
     0%{ transform:scale(1); }
     50%{ transform:scale(1.25); }
     100%{ transform:scale(1); }
 }
-
 @keyframes fadeIn{
     from{ opacity:0; transform:translateY(25px); }
     to{ opacity:1; transform:translateY(0); }
 }
-
 /* Floating hearts */
 .floating-heart{
     position:absolute;
@@ -108,33 +92,27 @@ button{
     animation: floatUp linear infinite;
     opacity:0.8;
 }
-
 @keyframes floatUp{
     from{ transform:translateY(0); opacity:1; }
     to{ transform:translateY(-100vh); opacity:0; }
 }
 </style>
 </head>
-
 <body>
-
 <div class="container">
     <div class="heart">❤️</div>
-    <h1>Sri</h1>
+    <h1>Aditya</h1>
     <p>
         Every moment with you feels like a beautiful dream.
         You make my world brighter, warmer, and full of love.
         I choose you, today and always.
     </p>
-
-    <h2>Will you be my Valentine? 💕</h2>
-
+    <h2> Will you be my Valentine? 💕</h2>
     <div class="buttons">
         <button class="yes" onclick="yesClicked()">Yes 💖</button>
         <button class="no" onmouseover="moveNo()">No 😝</button>
     </div>
 </div>
-
 <script>
 function yesClicked(){
     document.body.innerHTML = `
@@ -151,13 +129,12 @@ function yesClicked(){
         ">
             <h1 style="font-size:4.2rem;">Yayyy ❤️</h1>
             <p style="font-size:2.1rem; font-family:Poppins;">
-                Swami, you just made my heart the happiest 💞<br/>
+                Adi, you just made my heart the happiest 💞<br/>
                 I love you endlessly 😘
             </p>
         </div>
     `;
 }
-
 function moveNo(){
     const noBtn = document.querySelector('.no');
     const x = Math.random() * (window.innerWidth - 120);
@@ -166,7 +143,6 @@ function moveNo(){
     noBtn.style.left = x + "px";
     noBtn.style.top = y + "px";
 }
-
 // Floating hearts generator
 setInterval(() => {
     const heart = document.createElement("div");
@@ -175,11 +151,9 @@ setInterval(() => {
     heart.style.left = Math.random() * 100 + "vw";
     heart.style.animationDuration = (3 + Math.random()*3) + "s";
     document.body.appendChild(heart);
-
     setTimeout(() => heart.remove(), 6000);
 }, 280);
 </script>
-
 </body>
 </html>
 
